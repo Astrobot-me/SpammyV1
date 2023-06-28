@@ -2,7 +2,6 @@ from pyautogui import *
 from time import sleep
 import progressbar
 
-
 Spammy_Logo = """ _____                                         _   _ __  
 /  ___|                                       | | | /  | 
 \ `--. _ __   __ _ _ __ ___  _ __ ___  _   _  | | | `| | 
@@ -29,6 +28,7 @@ widgets = [' [',
            ]
 
 
+
 while True:
 
     bar = progressbar.ProgressBar(max_value=b+1, widgets=widgets).start()
@@ -39,7 +39,7 @@ while True:
         sleep(c)
         bar.update(i+1)
 
-    print('')
+    print('Successfully Completed !!')
     option = input("Do you want to use this program Again(y/n) :>")
     if option.lower() == "y" or option.lower() == "yes":
         data_options = input("Do you want to Keep the Same data as Earlier (y/n)")
